@@ -4,7 +4,9 @@
 
 # begin Addition Flashcards method
 def addition_flashcards()
+    # clear screen
     system "clear"
+    # choose two random numbers
     num_1 = Random.rand(0..15)
     num_2 = Random.rand(0..15)
     correct_answer = num_1 + num_2
@@ -34,7 +36,7 @@ def subtraction_flashcards()
     system "clear"
     num_1 = Random.rand(0..15)
     num_2 = Random.rand(0..15)
-    # add logic for non-negative numbers
+    # add logic for non-negative numbers with future work
     correct_answer = num_1 - num_2
     puts "What is #{num_1} - #{num_2}?"
     player_answer = gets.chomp.to_i
