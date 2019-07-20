@@ -1,5 +1,5 @@
 # method to start the game
-# and as the user what kind of game they want to play
+# and ask the user what kind of game they want to play
 # addition, subtraction, multiplication, division
 
 # begin Addition Flashcards method
