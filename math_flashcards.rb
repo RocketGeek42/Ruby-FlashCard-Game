@@ -7,11 +7,13 @@ def addition_flashcards()
     # clear screen
     system "clear"
     # choose two random numbers
-    num_1 = Random.rand(0..15)
+    num_1 = Random.rand(0..15) # call Random class and use .rand method
     num_2 = Random.rand(0..15)
     correct_answer = num_1 + num_2
     puts "What is #{num_1} + #{num_2}?"
-    player_answer = gets.chomp.to_i
+    player_answer = gets.chomp.to_i # get input from user (standard input)
+    # gets has '\n' at the end of the string.  .chomp removes the final separator at the end of the string
+    # .to_i converts the input to an integer.
     if player_answer == correct_answer
         puts "Correct! #{num_1} + #{num_2} = #{correct_answer}"
     else
